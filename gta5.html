@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA V</title>
+</head>
+<body>
+    <input type="text" id="code" placeholder="Your Code">
+    <button id="download">Download GTA V</button>
+    <p id="pass"></p>
+    <div class="download" id="download" style="visibility: hidden;">
+        <a href="https://drive.google.com/uc?export=download&id=1ERliUvY4TCJPqZkVFuF1-9RHdLraMpCU" target="_blank">
+            <input type="hidden" id="part1">Part 1</button>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=19otKs21ab_93auqRARmlfqLqNUCctQLm" target="_blank">
+           <input type="hidden" id="part2">Part 2</button>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1Mm_jut_a7R4lZEYC6rlaNe-XAzo6nVpA" target="_blank">
+            <input type="hidden" id="part3">Part 3</button>
+        </a>
+        <a href="https://drive.google.com/uc?export=download&id=1yUIRM4PTTJrHUqSMv0sOx6erfW20f8uU" target="_blank">
+            <input type="hidden" id="part4">Part 4</button>
+        </a>
+    </div>
+</body>
+<script>
+    let btn = document.getElementById("download")
+    let code = document.getElementById("code")
+    let pass = document.getElementById("pass")
+    let part1 = document.getElementById("part1")
+    let part2 = document.getElementById("part2")
+    let part3 = document.getElementById("part3")
+    let part4 = document.getElementById("part4")
+    btn.addEventListener("click", function() {
+        if (code.value == "kA0W2moi") {
+            console.log("starting download.")
+            pass.innerHTML = "<b>Password: There is no password for this game.</b>"
+            part1.click()
+            part2.click()
+            part3.click()
+            part4.click()
+        }
+    })
+</script>
+</html>

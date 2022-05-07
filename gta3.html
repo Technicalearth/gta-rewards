@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA III</title>
+</head>
+<body>
+    <input type="text" id="code" placeholder="Your Code">
+    <button id="download">Download GTA III</button>
+</body>
+<script>
+    let btn = document.getElementById("download")
+    let code = document.getElementById("code")
+    btn.addEventListener("click", function() {
+        if (code.value == "kA0W2moi") {
+            console.log("starting download.")
+            window.location.href = "http://download2261.mediafire.com/54w31v6l06ug/k9f0hmphfd5ncfa/Gta+3+softonic+zone.rar"
+        }
+    })
+</script>
+</html>

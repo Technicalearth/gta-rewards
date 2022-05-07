@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA IV</title>
+</head>
+<body>
+    <input type="text" id="code" placeholder="Your Code">
+    <button id="download">Download GTA IV</button>
+    <p id="pass"></p>
+</body>
+<script>
+    let btn = document.getElementById("download")
+    let code = document.getElementById("code")
+    let pass = document.getElementById("pass")
+    btn.addEventListener("click", function() {
+        if (code.value == "kA0W2moi") {
+            console.log("starting download.")
+            pass.innerHTML = "<b>Password: There is no password for this game.</b>"
+            window.location.href = "https://archive.org/download/grand-theft-auto-iv-complete-edition-pc/GTA%20IV%20Complete%20Edition%20%28v1.2.0.32%29%20-%20PC.zip"
+        }
+    })
+</script>
+</html>
